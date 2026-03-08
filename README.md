@@ -54,24 +54,16 @@ nebo Ctrl+C v terminálu kde běží `docker compose up dev`.
 
 ---
 
-## Produkce (Docker + nginx)
-
-```bash
-docker compose --profile prod up --build
-```
-
-Přístup: http://192.168.155.2:4322/
-
----
-
 ## Struktura projektu
 
 ```
 src/
+  styles/
+    tokens.css      # CSS proměnné
+    base.css        # komponenty (.card, .btn, ...)
   pages/
     index.astro     # hlavní stránka
 astro.config.mjs    # konfigurace Astro
 package.json        # závislosti
-docker-compose.yml  # Docker konfigurace
-Dockerfile          # produkční build
+docker-compose.yml  # Docker konfigurace (dev)
 ```

@@ -9,9 +9,3 @@ services:
       - "0.0.0.0:4321:4321"
     command: sh -c "npm install && npm run dev -- --host"
 
-  prod:
-    build: .
-    ports:
-      - "0.0.0.0:4322:80"
-    profiles:
-      - prod
