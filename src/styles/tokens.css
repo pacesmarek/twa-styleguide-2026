@@ -1,0 +1,10 @@
+:root {
+  --color-primary: #6EDB92;
+
+  --border-radius: 8px;
+  --card-padding: 24px;
+  --card-background: #fff;
+
+  --btn-border-radius: 6px;
+  --btn-padding: 8px 24px;
+}
