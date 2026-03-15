@@ -1,11 +1,4 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background: #c3c3c3;
-}
+/* Components */
 
 .card {
   padding: var(--card-padding);

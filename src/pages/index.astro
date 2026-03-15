@@ -1,21 +1,38 @@
 ---
 import '../styles/tokens.css';
-import '../styles/base.css';
+import '../styles/components.css';
+import '../styles/styleguide.css';
 ---
 <html lang="cs">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cvičení 5</title>
+    <title>Style Guide</title>
   </head>
   <body>
-    <div class="card">
-      <!-- TODO:
-        + inputs
-        + link: forget password
-      -->
-      <div>TODO</div>
-      <button class="btn btn-primary">Button</button>
+    <h1>Style Guide</h1>
+
+    <h2>Pages</h2>
+    <ul>
+      <li><a href="/twa-styleguide-2026/login">Login</a></li>
+    </ul>
+
+    <h2>Components</h2>
+
+    <div class="component-item">
+      <h3>Card</h3>
+      <div class="component-preview">
+        <div class="card">Card content</div>
+      </div>
+      <pre><code>&lt;div class="card"&gt;Card content&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="component-item">
+      <h3>Button</h3>
+      <div class="component-preview">
+        <button class="btn btn-primary">Button</button>
+      </div>
+      <pre><code>&lt;button class="btn btn-primary"&gt;Button&lt;/button&gt;</code></pre>
     </div>
   </body>
 </html>

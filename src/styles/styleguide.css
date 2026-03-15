@@ -1,0 +1,72 @@
+/* Global resets */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Basic styles */
+
+body {
+  margin: 0;
+  background: #c3c3c3;
+  font-family: sans-serif;
+  padding: 3rem 1.5rem;
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+h2 {
+  margin: 2rem 0 0.75rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Component previews */
+
+.component-item {
+  margin-top: 2rem;
+}
+
+.component-item h3 {
+  margin: 0 0 0.75rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.component-preview {
+  padding: 1.5rem;
+  background: #e8e8e8;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.component-item pre {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  background: #222;
+  color: #e8e8e8;
+  border-radius: 0 0 0.5rem 0.5rem;
+  font-size: 0.875rem;
+  overflow-x: auto;
+}
