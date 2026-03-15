@@ -1,13 +1,13 @@
-/* Components */
+/* Card */
 
 .card {
   padding: var(--card-padding);
   background: var(--card-background);
   border-radius: var(--border-radius);
   width: 450px;
-  margin-left: auto;
-  margin-right: auto;
 }
+
+/* Button */
 
 .btn {
   padding: var(--btn-padding);
@@ -19,4 +19,43 @@
 
 .btn-primary {
   background: var(--color-primary);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* Form */
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.form-field label {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.form-field input {
+  padding: var(--input-padding);
+  border: 1px solid var(--input-border);
+  border-radius: var(--input-border-radius);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.form-field input:focus {
+  border-color: var(--input-border-focus);
+}
+
+.forgot {
+  display: block;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  color: #666;
 }

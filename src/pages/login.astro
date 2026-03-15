@@ -1,21 +1,47 @@
 ---
 import '../styles/tokens.css';
 import '../styles/components.css';
+import '../styles/styleguide.css';
 ---
 <html lang="cs">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <style>
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      .login-wrapper {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
   </head>
   <body>
+    <nav>
+      <a href="/twa-styleguide-2026/">← Style Guide</a>
+    </nav>
+    <div class="login-wrapper">
     <div class="card">
-      <!-- TODO:
-        + inputs
-        + link: forget password
-      -->
-      <div>TODO</div>
-      <button class="btn btn-primary">Button</button>
+      <h1>Sign in</h1>
+      <form>
+        <div class="form-field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" />
+        </div>
+        <div class="form-field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="••••••••" />
+        </div>
+        <a class="forgot" href="#">Forgot password?</a>
+        <button class="btn btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+    </div>
     </div>
   </body>
 </html>

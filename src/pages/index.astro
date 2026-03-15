@@ -2,6 +2,22 @@
 import '../styles/tokens.css';
 import '../styles/components.css';
 import '../styles/styleguide.css';
+
+const codeCard = `<div class="card">Card content</div>`;
+
+const codeButton = `<button class="btn btn-primary">Button</button>`;
+
+const codeInput = `
+<div class="form-field">
+  <label for="input">Label</label>
+  <input type="text" id="input" placeholder="Placeholder" />
+</div>`;
+
+const codeInputPassword = `
+<div class="form-field">
+  <label for="password">Password</label>
+  <input type="password" id="password" placeholder="••••••••" />
+</div>`;
 ---
 <html lang="cs">
   <head>
@@ -24,7 +40,7 @@ import '../styles/styleguide.css';
       <div class="component-preview">
         <div class="card">Card content</div>
       </div>
-      <pre><code>&lt;div class="card"&gt;Card content&lt;/div&gt;</code></pre>
+      <pre><code set:text={codeCard} /></pre>
     </div>
 
     <div class="component-item">
@@ -32,7 +48,29 @@ import '../styles/styleguide.css';
       <div class="component-preview">
         <button class="btn btn-primary">Button</button>
       </div>
-      <pre><code>&lt;button class="btn btn-primary"&gt;Button&lt;/button&gt;</code></pre>
+      <pre><code set:text={codeButton} /></pre>
+    </div>
+
+    <div class="component-item">
+      <h3>Input</h3>
+      <div class="component-preview">
+        <div class="form-field">
+          <label for="sg-input">Label</label>
+          <input type="text" id="sg-input" placeholder="Placeholder" />
+        </div>
+      </div>
+      <pre><code set:text={codeInput} /></pre>
+    </div>
+
+    <div class="component-item">
+      <h3>Input — password</h3>
+      <div class="component-preview">
+        <div class="form-field">
+          <label for="sg-password">Password</label>
+          <input type="password" id="sg-password" placeholder="••••••••" />
+        </div>
+      </div>
+      <pre><code set:text={codeInputPassword} /></pre>
     </div>
   </body>
 </html>
