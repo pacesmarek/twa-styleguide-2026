@@ -1,4 +1,4 @@
-# Cvičení 5 — Astro
+# Cvičení 6 — Astro
 
 Minimální Astro projekt. Pracujeme z Docker kontejneru — není potřeba mít Node.js nainstalovaný lokálně.
 
